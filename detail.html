@@ -5,13 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detail</title>
-    <style>
-         .social-media-symbols{
-            height: 20px; 
-            width: 22px;
-
-        }
-    </style>
+    <link rel="stylesheet" href="styles/detail.css">
+    <link rel="stylesheet" href="styles/common.css">
+    
 
 </head>
 <body>
@@ -26,10 +22,10 @@
 
 <!-- Content ______________________-->
         <section>
-            <img style="height: 500px;width: 500px;" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"
-             >
-
-             <a href="payment.html">Book Now</a>
+            <img id="img-1" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg">
+             
+        <div id="book-now">
+             <!-- <a href="payment.html">Book Now</a> -->
             <form action="payment.html" method="get">
                 <label for="adult">Adults:</label>
                 <input type="number" value="1" min="1" required ><br>
@@ -45,16 +41,19 @@
 
                 <label for="total">Total:</label>
                 <input type="" readonly><br>
-
+            
                 <a href="payment.html"><input type="submit" value="Book Now"></a>
             </form>
+        </div>
+
              <!--some discription about hotel Radisson Blu Hotel -->
-            <h2>Radisson Blu Hotel</h2>
+        <div id="discription">    
+            <h3>Radisson Blu Hotel</h3>
              <div>
                 <p>RATING</p>
             <p>5 Star</p>
 
-            <h5>AMENTTIES</h5>
+            <h4>AMENTTIES</h4>
             <ul>
                 <li>Room service</li>
                 <li>Restaurent</li>
@@ -63,12 +62,13 @@
                 <li>Pool</li>
             </ul>
 
-            <h5>DISCRIPTION</h5>
+            <h4>DISCRIPTION</h4>
             <P>The essence of Radisson Blu is reflected in every aspect of who we are and what we do. We provide unparalleled service, comfort and style, while creating meaningful and memorable experiences.</P>
             </div>
-           <!-- Discription end-->
+        </div>    
+            <!-- Discription end-->
 
-        </section>
+    </section>
 
 <!-- Footer_________________________-->
 <footer>

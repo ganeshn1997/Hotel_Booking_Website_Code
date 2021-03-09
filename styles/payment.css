@@ -1,0 +1,45 @@
+body{
+    background-color: #e0e0e0;
+    margin: 0%;
+    margin-bottom: 0px;
+    height: 100vh;
+    width: 100vw;
+} 
+/* header part*/
+
+header{
+    background-color: rosybrown;
+}
+
+/* section part*/
+
+#hotel-det-div{
+    background-color: rgb(132,136,139);
+    width: 50%;
+    height: 20%;
+    
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+#hotel-img{
+    height: 500px;
+    width: 500px;
+}
+
+#person-det{
+    margin: 2%;
+
+}
+#person-tarif{
+    border: 2px solid black ;
+    border-radius: 5px;
+    padding: 1% 2% ;
+    margin: 2%;
+}
+
+/* footer part*/
+footer{
+    background-color: rosybrown;
+    margin-bottom: 0%;
+}

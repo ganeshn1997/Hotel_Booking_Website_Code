@@ -1,0 +1,31 @@
+body{
+    background-color: #e0e0e0;
+    margin: 0%;
+    margin-bottom: 0px;
+    height: 100vh;
+    width: 100vw;
+} 
+/* header part*/
+
+header{
+    background-color: rosybrown;
+}
+
+/* section part*/
+
+.hotel-img-size{
+    height: 200px;
+    width: 250px;
+}
+.Hotel-list-divs{
+background-color: rgb(132,136,139);
+width: 40%;
+height: auto;
+margin: 2%;
+}
+
+/* footer part*/
+footer{
+    background-color: rosybrown;
+    margin-bottom: 0%;
+}

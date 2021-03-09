@@ -1,0 +1,36 @@
+/* include border and padding in element width and height */
+ /* {
+  box-sizing: border-box;
+} */
+
+body{
+    background-color: #e0e0e0;
+    margin: 0%;
+    margin-bottom: 0px;
+    height: 100vh;
+    width: 100vw;
+} 
+
+/*headrer styles */
+header{
+    background-color: rosybrown;
+}
+
+/*section part */
+#img-1{
+  height: 500px;
+  width: 500px;
+  margin: 2% 4% 0% 4%;
+}
+#book-now{
+    margin: 0% 4% 1% 4%;
+}
+#discription{
+    margin: 1% 4% 2% 4%;
+}
+
+/* footer part*/
+footer{
+    background-color: rosybrown;
+    margin-bottom: 0%;
+}
