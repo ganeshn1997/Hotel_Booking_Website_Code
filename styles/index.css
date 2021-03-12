@@ -15,6 +15,13 @@ body{
 /*headrer styles */
 header{
     background-color: rosybrown;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
 }
 
 /*content search bar */
@@ -25,7 +32,26 @@ header{
    background-repeat: no-repeat;
    background-size: cover;
    position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
+
+#search-bar-box{
+    background-color: #f1f1f1;
+    border: 1px solid transparent;
+    border-radius: 10px ;
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+
+   
+}
+
+/* #search-bar-box:focus {
+    outline: none;
+} */
+
 
 /*images  section*/
 #index-container {
@@ -50,10 +76,22 @@ header{
     position: relative;
 }
 
+#view-more{
+    margin-bottom:7%;
+    display: flex;
+    justify-content: center;
+}
 /*footer___________*/
 footer{
     background-color: rosybrown;
+    padding:0.7%;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
     bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   
 }
 

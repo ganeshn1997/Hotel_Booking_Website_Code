@@ -8,21 +8,40 @@ body{
 /* header part*/
 
 header{
+    top: 0%;
     background-color: rosybrown;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /* section part*/
+section{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin-top: 6%;
+    margin-bottom: 6%;
+
+    /* margin-top:7%;
+    display: flex;
+    flex-direction: column;
+    align-content: center; */
+}
 
 #hotel-det-div{
-    background-color: rgb(132,136,139);
-    width: 50%;
+    background-color: rgb(132, 136, 139);
+    width: 60%;
     height: 20%;
-    
-    margin: auto;
-    margin-top: 2%;
-    margin-bottom: 2%;
+    margin: 2% auto;  
+    align-items: center;
 }
 #hotel-img{
+    display: flex;
+    justify-content: center;
     height: 500px;
     width: 500px;
 }
@@ -42,4 +61,12 @@ header{
 footer{
     background-color: rosybrown;
     margin-bottom: 0%;
+    padding:0.7%;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }

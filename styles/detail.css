@@ -13,10 +13,25 @@ body{
 
 /*headrer styles */
 header{
+    top: 0%;
     background-color: rosybrown;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /*section part */
+section{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin-top: 6%;
+    margin-bottom: 6%;
+}
+
 #img-1{
   height: 500px;
   width: 500px;
@@ -33,4 +48,12 @@ header{
 footer{
     background-color: rosybrown;
     margin-bottom: 0%;
+    padding:0.7%;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }

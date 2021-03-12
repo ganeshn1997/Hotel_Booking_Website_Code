@@ -7,6 +7,7 @@
     <title>Index</title>
     <link rel="stylesheet" href="styles/common.css">
     <link rel="stylesheet" href="styles/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
 
 </head>
 <body >
@@ -14,7 +15,7 @@
         <header id="header"> 
            <img class="logo-img"
            src="assests/images/logo.png" alt="logo" > 
-           <a  href="login.html" >Login</a>
+           <a id="login-link" href="login.html" >Login</a>
 
 
         </header>
@@ -22,8 +23,10 @@
         <!-- Content________________-->
         <section id="index-container">
           <div id="search-Bar">
-           <input id="search-Bar-In" type="text" placeholder="City" width="200px">
-          </div>
+           <form autocomplete="off" id="search-bar">
+              <input id="search-bar-box" type="text"  placeholder="City" width="200px">
+           </form>
+        </div>
            <!--______ search Bar end________-->
             
         <div>
@@ -53,9 +56,9 @@
 
             </div>
             
-                <div>
-                 <a href="">View more>></a>
-                </div>
+                
+                 <a id="view-more" href="">View more>></a>
+                
 
 
         </div>
@@ -66,18 +69,21 @@
 
 <footer>
     <a href="contact.html" target="_blank">Contact Us</a>
-    <br>
-     <a href="https://www.facebook.com" target="_blank">
-         <img class="social-media-symbols" src="assests/images/facebook.png"  >
-     </a>
-     <a href="https://www.instagram.com" target="_blank">
-         <img class="social-media-symbols" src="assests/images/instagram.png"  >
-     </a>
-     <a href="https://twitter.com" target="_blank">
-         <img class="social-media-symbols" src="assests/images/twitter.png"  >
-     </a>
-     <br>
+    
+    <p id="copy-write-text">
     O 2020 ROOM SEARCH PVT LTD
+    </p>
+    <div id="social-symbol">
+        <a href="https://www.facebook.com" target="_blank">
+            <img class="social-media-symbols" src="assests/images/facebook.png"  >
+        </a>
+        <a href="https://www.instagram.com" target="_blank">
+            <img class="social-media-symbols" src="assests/images/instagram.png"  >
+        </a>
+        <a href="https://twitter.com" target="_blank">
+            <img class="social-media-symbols" src="assests/images/twitter.png"  >
+        </a>
+       </div>
 </footer>
     
     </div>

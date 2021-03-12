@@ -7,33 +7,42 @@
     <title>List</title>
     <link rel="stylesheet" href="styles/common.css">
     <link rel="stylesheet" href="styles/list.css">
-   
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <div>
         <header> 
           <a href="index.html">
-               <img style="height: 60px;width: 60px;" src="assests/images/logo.png" alt="logo">
+               <img class="logo-img"
+               src="assests/images/logo.png" alt="logo">
           </a>
-           <a  href="login.html" >Login</a>
+           <a id="login-link"  href="login.html" >Login</a>
         </header>
         
 
       <!--Content _________________-->  
-        <section>
-            <ul>
-               <li><a href="#hotel1">List View</a></li>
-               <li><a  href="#map-view">Map View</a></li>
-           </ul>
+    <section>
+        
+        <ul  id="pills-tab">
+            <!-- <li class="nav-item"> -->
+                <a class="nav-link active" id="a" data-toggle="pill" href="#hotel1">List View</a>
+            <!-- </li><br> --><br>
+            <!-- <li class="nav-item"> -->
+                <a class="nav-link" id="a" data-toggle="pill" href="#map-view">Map View</a>
+            <!-- </li> -->
+        </ul>
+        
            <!-- hotels list  _____________-->
+        <div id="city-caed-list">   
            <div id="hotel1" class="Hotel-list-divs">
                <a href="detail.html">
                    <img class="hotel-img-size"  src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"
                    >
                </a>
-               <a href="detail.html"><h3>Radisson Blu Hotel</h3></a>
-               <a href="detail.html"> <p>5 Star</p></a>
-               <a href="detail.html"><p>New Delhi</p></a>
+               <a class="a-tag" href="detail.html"><h3>Radisson Blu Hotel</h3></a>
+               <a class="a-tag" href="detail.html"> <p>5 Star</p></a>
+               <a class="a-tag" href="detail.html"><p>New Delhi</p></a>
            </div>
 
            <div id="hotel2" class="Hotel-list-divs">
@@ -56,7 +65,7 @@
             <p>New Delhi</p>
            </div> 
 
-
+        </div>
            <div id="map-view">
             <a href="">
                 <img src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png"
@@ -65,27 +74,30 @@
            
             MAP VIEW
            </div>
+           <br><br><br>
 
-        </section>
+    </section>
 
 <!-- Footer_____________________-->
 
 <footer>
     <a href="contact.html" target="_blank">Contact Us</a>
-    <br>
-     <a href="https://www.facebook.com" target="_blank">
-         <img class="social-media-symbols" src="assests/images/facebook.png"  >
-     </a>
-     <a href="https://www.instagram.com" target="_blank">
-         <img class="social-media-symbols" src="assests/images/instagram.png"  >
-     </a>
-     <a href="https://twitter.com" target="_blank">
-         <img class="social-media-symbols" src="assests/images/twitter.png"  >
-     </a>
-     <br>
-    O 2020 ROOM SEARCH PVT LTD
-</footer>
     
+    <p id="copy-write-text">
+    O 2020 ROOM SEARCH PVT LTD
+    </p>
+    <div id="social-symbol">
+        <a href="https://www.facebook.com" target="_blank">
+            <img class="social-media-symbols" src="assests/images/facebook.png"  >
+        </a>
+        <a href="https://www.instagram.com" target="_blank">
+            <img class="social-media-symbols" src="assests/images/instagram.png"  >
+        </a>
+        <a href="https://twitter.com" target="_blank">
+            <img class="social-media-symbols" src="assests/images/twitter.png"  >
+        </a>
+       </div>
+</footer>
     </div>
   
 </body>

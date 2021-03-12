@@ -1,11 +1,37 @@
+* {
+    font-family: 'Ubuntu', sans-serif;
+}
+a {
+    color: black !important;
+    text-decoration: none;
+}
+
 .social-media-symbols{
     height: 20px; 
     width: 22px;
-
+    margin-right: 2%;
+    /* padding: 2%;
+    display: flex; 
+    justify-content: flex-start; */
+}
+#social-symbol{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 2%;
+   
+}
+#copy-write-text{
+    align-self: flex-end;
+    font-size: 10px;
 }
 
 .logo-img{
     height: 60px;
     width: 60px;
+    margin-left: 1%;
 }
- 
+ #login-link{
+    float: right;
+    margin-right: 2%;
+ }
