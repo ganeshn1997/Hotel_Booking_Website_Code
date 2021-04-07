@@ -1,97 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detail</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles/detail.css">
     <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/loader.css">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
 
 </head>
+
 <body>
+
     <div>
-        <header> 
+        <header>
             <a href="index.html">
-                 <img class="logo-img"
-                 src="assests/images/logo.png" alt="logo">
+                <img class="logo-img" src="assests/images/logo.png" alt="logo">
             </a>
-             <a id="login-link"  href="login.html" >Login</a>
-          </header>
+            <a id="login-link" href="login.html">Login</a>
+        </header>
 
-<!-- Content ______________________-->
+        <!-- Content ______________________-->
         <section>
-            <img id="img-1" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg">
-             
-        <div id="book-now">
-             <!-- <a href="payment.html">Book Now</a> -->
-            <form action="payment.html" method="get">
-                <label for="adult">Adults:</label>
-                <input type="number" value="1" min="1" required ><br>
+            <div id="slideshow-booking">
+                <div class="booking-box">
+                    <div id="slideshow-container">
+                        <img id="img-1" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg">
 
-                <label for="name">Name:</label>
-                <input type="text" required><br>
+                    </div>
 
-                <label for="fromDate">From Date:</label>
-                <input type="date" required><br>
+                </div>
 
-                <label for="toDate">To Date:</label>
-                <input type="date" required><br>
 
-                <label for="total">Total:</label>
-                <input type="" readonly><br>
-            
-                <a href="payment.html"><input type="submit" value="Book Now"></a>
-            </form>
-        </div>
+                <div id="booking-form" class="booking-box">
+                    <!-- <a href="payment.html">Book Now</a> -->
+                    <form action="payment.html" method="get" autocomplete="off">
+                        <div class="outer">
+                            <label for="adult">Adults:</label>
+                            <input class="inner" type="number" name="adult" id="adult" value="1" min="1" oninput="updatePrice()" required/>
+                        </div>
 
-             <!--some discription about hotel Radisson Blu Hotel -->
-        <div id="discription">    
-            <h3>Radisson Blu Hotel</h3>
-             <div>
-                <p>RATING</p>
-            <p>5 Star</p>
+                        <div class="outer">
+                            <label for="name">Name:</label>
+                            <input class="inner" type="text" name="name" id="name" required/>
+                        </div>
 
-            <h4>AMENTTIES</h4>
-            <ul>
-                <li>Room service</li>
-                <li>Restaurent</li>
-                <li>Business center </li>
-                <li>Fitness center</li>
-                <li>Pool</li>
-            </ul>
+                        <div class="outer">
+                            <label for="fromDate">From Date:</label>
+                            <input class="inner" type="date" name="fromDate" id="fromDate" oninput="updatePrice()" required/>
+                        </div>
 
-            <h4>DISCRIPTION</h4>
-            <P>The essence of Radisson Blu is reflected in every aspect of who we are and what we do. We provide unparalleled service, comfort and style, while creating meaningful and memorable experiences.</P>
+                        <div class="outer">
+                            <label for="toDate">To Date:</label>
+                            <input class="inner" type="date" name="toDate" id="toDate" oninput="updatePrice()" required/>
+                        </div>
+
+                        <div class="outer">
+                            <label for="price">Total:</label>
+                            <input class="inner" type="text" name="price" id="price" readonly/>
+                            <input class="inner" type="hidden" id="id" name="id">
+                        </div>
+
+                        <div>
+                            <input type="submit" class="btn btn-outline-success" value="Book Now" id="book-now" />
+                        </div>
+                    </form>
+                </div>
             </div>
-        </div>    
+            <!--some discription about hotel Radisson Blu Hotel -->
+            <div id="discription">
+                <h3>Radisson Blu Hotel</h3>
+                <div>
+                    <p>RATING</p>
+                    <p>5 Star</p>
+
+                    <h4>AMENTTIES</h4>
+                    <ul>
+                        <li>Room service</li>
+                        <li>Restaurent</li>
+                        <li>Business center </li>
+                        <li>Fitness center</li>
+                        <li>Pool</li>
+                    </ul>
+
+                    <h4>DISCRIPTION</h4>
+                    <P>The essence of Radisson Blu is reflected in every aspect of who we are and what we do. We provide unparalleled service, comfort and style, while creating meaningful and memorable experiences.</P>
+                </div>
+            </div>
             <!-- Discription end-->
             <br><br><br>
 
-    </section>
+        </section>
 
-<!-- Footer_________________________-->
-<footer>
-    <a href="contact.html" target="_blank">Contact Us</a>
-    
-    <p id="copy-write-text">
-    O 2020 ROOM SEARCH PVT LTD
-    </p>
-    <div id="social-symbol">
-        <a href="https://www.facebook.com" target="_blank">
-            <img class="social-media-symbols" src="assests/images/facebook.png"  >
-        </a>
-        <a href="https://www.instagram.com" target="_blank">
-            <img class="social-media-symbols" src="assests/images/instagram.png"  >
-        </a>
-        <a href="https://twitter.com" target="_blank">
-            <img class="social-media-symbols" src="assests/images/twitter.png"  >
-        </a>
-       </div>
-</footer>
-    
-</div>
-  
+        <!-- Footer_________________________-->
+        <footer>
+            <a href="contact.html" target="_blank">Contact Us</a>
+
+            <p id="copy-write-text">
+                O 2020 ROOM SEARCH PVT LTD
+            </p>
+            <div id="social-symbol">
+                <a href="https://www.facebook.com" target="_blank">
+                    <img class="social-media-symbols" src="assests/images/facebook.png">
+                </a>
+                <a href="https://www.instagram.com" target="_blank">
+                    <img class="social-media-symbols" src="assests/images/instagram.png">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img class="social-media-symbols" src="assests/images/twitter.png">
+                </a>
+            </div>
+        </footer>
+
+    </div>
+
 </body>
+
 </html>

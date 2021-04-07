@@ -1,13 +1,15 @@
-body{
+body {
     background-color: #e0e0e0;
     margin: 0%;
     margin-bottom: 0px;
     height: 100vh;
     width: 100vw;
-} 
+}
+
+
 /* header part*/
 
-header{
+header {
     top: 0%;
     background-color: rosybrown;
     position: fixed;
@@ -16,63 +18,77 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-   
 }
 
+
 /* section part*/
-section{
+
+section {
     position: relative;
     height: 100%;
     width: 100%;
     margin-top: 8%;
     margin-bottom: 6%;
 }
+
 #pills-tab {
-   
     margin-left: 35%;
     margin-right: 35%;
-    display: flex; 
+    display: flex;
     justify-content: space-evenly;
-    
 }
-#a{
+
+#a {
     text-decoration: none;
     font-weight: bold;
     font-size: 18px;
     color: darkslategray;
 }
-#city-caed-list{
-   float: inline-start;
-   display: grid;
-   grid-template-rows: auto;
-   grid-template-columns: 40% 40%;
-   justify-content: space-evenly;
+
+#city-card-list {
+    float: inline-start;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 40% 40%;
+    justify-content: space-evenly;
 }
-.hotel-img-size{
+
+.hotel-img-size {
     height: 200px;
     width: 250px;
 }
-.Hotel-list-divs{
-background-color: rgb(132,136,139);
-width: 90%;
-height: auto;
-margin: 2%;
+
+.Hotel-list-divs {
+    background-color: lightgrey;
+    /* rgb(132,136,139) */
+    display: flex;
+    width: 90%;
+    height: auto;
+    margin: 2%;
 }
-.a-tag{
+
+.Hotel-list-dit {
+    margin-left: 2%;
+}
+
+.a-tag {
     text-decoration: none;
     color: black;
 }
-#map-view{
-   display: none;
+
+#map-view {
+    display: none;
     height: 82vh;
     margin-top: 2%;
 }
 
+
 /* footer part*/
-footer{
+
+footer {
     background-color: rosybrown;
     margin-bottom: 0%;
-    padding:0.7%;
+    padding: 0.7%;
     position: fixed;
     width: 100%;
     z-index: 1;

@@ -1,13 +1,15 @@
-body{
+body {
     background-color: #e0e0e0;
     margin: 0%;
     margin-bottom: 0px;
     height: 100vh;
     width: 100vw;
-} 
+}
+
+
 /* header part*/
 
-header{
+header {
     top: 0%;
     background-color: rosybrown;
     position: fixed;
@@ -18,50 +20,70 @@ header{
     align-items: center;
 }
 
+
 /* section part*/
-section{
+
+section {
     position: relative;
     height: 100%;
     width: 100%;
     margin-top: 6%;
     margin-bottom: 6%;
-
     /* margin-top:7%;
     display: flex;
     flex-direction: column;
     align-content: center; */
 }
 
-#hotel-det-div{
+#hotel-det-div {
     background-color: rgb(132, 136, 139);
     width: 60%;
     height: 20%;
-    margin: 2% auto;  
+    margin: 2% auto;
+    display: flex;
     align-items: center;
 }
-#hotel-img{
+
+#customer-payment-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2%;
+    border: black 1px solid;
+    border-radius: 5px;
+    margin: 0% 2%;
+    background-color: rosybrown;
+}
+
+#hotel-det {
+    margin-left: 2%;
+}
+
+#hotel-img {
     display: flex;
     justify-content: center;
     height: 500px;
     width: 500px;
 }
 
-#person-det{
+#person-det {
     margin: 2%;
+}
 
-}
-#person-tarif{
-    border: 2px solid black ;
+#person-tarif {
+    border: 2px solid black;
     border-radius: 5px;
-    padding: 1% 2% ;
+    padding: 1% 2%;
     margin: 2%;
 }
+
 
 /* footer part*/
-footer{
+
+footer {
     background-color: rosybrown;
     margin-bottom: 0%;
-    padding:0.7%;
+    padding: 0.7%;
     position: fixed;
     width: 100%;
     z-index: 1;
