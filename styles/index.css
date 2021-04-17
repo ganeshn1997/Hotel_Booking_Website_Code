@@ -1,19 +1,22 @@
-
 /* include border and padding in element width and height */
- /* {
+
+
+/* {
   box-sizing: border-box;
 } */
 
-body{
+body {
     background-color: #e0e0e0;
     margin: 0%;
     margin-bottom: 0px;
     height: 100vh;
     width: 100vw;
-} 
+}
+
 
 /*headrer styles */
-header{
+
+header {
     background-color: rosybrown;
     position: fixed;
     width: 100%;
@@ -21,59 +24,58 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-   
 }
+
 
 /*content search bar */
-#search-Bar{
-    background-image: url(https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg) ;
-   height: 380px;
-   background-position: center;
-   background-repeat: no-repeat;
-   background-size: cover;
-   position: relative;
-   display: flex;
-   justify-content: center;
-   align-items: center;
+
+#search-Bar {
+    background-image: url(https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg);
+    height: 380px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#search-bar-box{
+#search-bar-box {
     background-color: #f1f1f1;
     border: 1px solid transparent;
-    border-radius: 10px ;
+    border-radius: 10px;
     padding: 10px;
     font-size: 16px;
     width: 100%;
-
-   
 }
- 
- #search-bar-box:focus {
+
+#search-bar-box:focus {
     outline: none;
-} 
+}
 
 
 /*images  section*/
+
 #index-container {
     display: flex;
     flex-direction: column;
 }
 
-#city-card{
+#city-card {
     display: flex;
-     justify-content: space-evenly;
-     padding: 4% 0%;
-   
+    justify-content: space-evenly;
+    padding: 4% 0%;
 }
 
-.city-image{
-     height: 150px;
+.city-image {
+    height: 150px;
     width: 150px;
     border-radius: 25%;
     box-shadow: 10px 10px 10px grey;
 }
 
-.city-card-individual{
+.city-card-individual {
     position: relative;
 }
 
@@ -88,23 +90,37 @@ header{
     text-align: center;
     border-radius: 25%;
 }
+
 .city-card-individual:hover .overlay {
     opacity: 1;
 }
+
 .overlay span {
-    position:relative;
-    top:45%;
+    position: relative;
+    top: 45%;
 }
 
-#view-more{
-    margin-bottom:7%;
+#view-more {
+    margin-bottom: 7%;
+    margin-left: 40%;
+    margin-right: 40%;
+    display: flex;
+    background-color: dimgray;
     display: flex;
     justify-content: center;
 }
+
+
+/* #view-more:hover {
+    background-color: lawngreen;
+} */
+
+
 /*footer___________*/
-footer{
+
+footer {
     background-color: rosybrown;
-    padding:0.7%;
+    padding: 0.7%;
     position: fixed;
     width: 100%;
     z-index: 1;
@@ -112,8 +128,4 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
-  
 }
-
-
-
